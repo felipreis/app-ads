@@ -22,6 +22,11 @@ public class EmployController {
         return service.create(form);
     }
 
+    @GetMapping("/all")
+    public List<Employ> listarUsuarios() {
+        return service.findAll();
+    }
+
     @GetMapping("/{id}")
     public Employ get(@PathVariable Integer id){
         return service.get(id);

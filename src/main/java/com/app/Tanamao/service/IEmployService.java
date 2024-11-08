@@ -14,4 +14,6 @@ public interface IEmployService {
 
     List<Employ> getAll(String setor);
 
+    List<Employ> findAll();
+
 }

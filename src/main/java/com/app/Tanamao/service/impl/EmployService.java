@@ -39,4 +39,9 @@ public class EmployService implements IEmployService {
     public List<Employ> getAll(String setor) {
         return repository.findBySetor(setor);
     }
+
+    @Override
+    public List<Employ> findAll() {
+        return repository.findAll();
+    }
 }
